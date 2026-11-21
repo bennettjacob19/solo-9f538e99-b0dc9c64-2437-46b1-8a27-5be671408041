@@ -1,0 +1,14 @@
+services:
+  rehearsal:
+    build: .
+    image: circuit-rehearsal:latest
+    ports:
+      - "8000:8000"
+    environment:
+      DB_PATH: /data/migrations.db
+    volumes:
+      - rehearsal-data:/data
+    restart: unless-stopped
+
+volumes:
+  rehearsal-data:

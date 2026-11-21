@@ -1,0 +1,27 @@
+{
+  "links": [
+    {"link_id": "L1", "source": "A", "target": "B", "capacity": 5},
+    {"link_id": "L2", "source": "A", "target": "B", "capacity": 5},
+    {"link_id": "L3", "source": "A", "target": "B", "capacity": 5}
+  ],
+  "tunnels": [
+    {
+      "tunnel_id": "T1",
+      "bandwidth": 5,
+      "current_path": ["L1"],
+      "target_path": ["L2"]
+    },
+    {
+      "tunnel_id": "T2",
+      "bandwidth": 5,
+      "current_path": ["L2"],
+      "target_path": ["L3"]
+    },
+    {
+      "tunnel_id": "T3",
+      "bandwidth": 5,
+      "current_path": ["L3"],
+      "target_path": ["L1"]
+    }
+  ]
+}
